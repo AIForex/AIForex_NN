@@ -14,4 +14,4 @@ If we like your pull request,
 we will pull your changes into the master branch.
 
 If you have questions,
-e-me: bikle101 at gmail
+e-me: Peterkhenry@gmail.com
