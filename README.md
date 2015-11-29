@@ -15,4 +15,4 @@ we will pull your changes into the master branch.
 
 If you have questions,
 e-me: Peterkhenry@gmail.com
-website: ai.marketcheck.co.uk
+website: https://ai.marketcheck.co.uk
