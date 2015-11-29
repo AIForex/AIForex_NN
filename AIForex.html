@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+  #wrap {
+    width:800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h2 {
+    text-align: center;
+  }
+  h1 {
+    font-size: 16px;
+    color: #333;
+    background-color: #DDD;
+    border-bottom: 1px #999 solid;
+    text-align: center;
+  }
+  body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  }
+  </style>
+	<head>
+	<title> AIForex</title>
+	</head>
+<div id="wrap">
+   
+	<body>
+	<h2>AIForex Deep Q Demo</h2><br>
+	<h1>Description</h1>
+	
+	<p>
+	This demo, is an example of Deep Q applied to the Forex Markets, The idea is that the algorithm can help perform decision based on 3 actions, 5 inputs, with the goal of maximum pips/ points over time. 
+	Deep Q would try and avoid decisions that would produce negative reward and pick decisions to increase rewards
+    </P>
+	
+	<h1>Forex / Stock chart</h1>
+	<p>Forex chart data plotted below chart Scrolls left to right, open high low and close would act as inputs data can be resented as pixel data or raw forex data </p><br>
+	
+	<button onclick="Load CSV()">Load CSV</button>
+	
+	<textarea id="qspec" style="width:100%; height:200px;"> This box should contain chart Data Open High Low and Close, chart should scroll left to right. </textarea>
+	<br>
+
+
+   		<button onclick="gofast()">Go fast</button>
+   		<button onclick="gonormal()">Go normal speed</button>
+  	 	<button onclick="goslow()">Go slow</button><br />
+   		<button onclick="startlearn()">Start Learning</button>
+   		<button onclick="stoplearn()">Stop Learning</button>
+		</body><br>
+		
+		<h1>Results</h1><br><br><br>
+		
+		<ul>
+		
+			<li><p>Total Pips gained = </p></li>
+			<li><p>Average profit per trade = </p></li>
+			<li><p>Percentage Correct = </p></li>
+		</ul><br>
+		
+		<h1>Save network or export indicator to Metatrader</h1><br>
+		
+		
+	<button onclick="Export()">Export</button>
+	</div>
+		</body>
+		</html>
